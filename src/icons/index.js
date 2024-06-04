@@ -1,4 +1,5 @@
-import { GitHubIcon } from "./GitHub";
+import { GitHubIcon } from "./GitHubIcon";
 import { LinkedinIcon } from "./LinkedinIcon";
+import { MapleLeafIcon } from "./MapleLeafIcon";
 
-export { GitHubIcon, LinkedinIcon };
+export { GitHubIcon, LinkedinIcon, MapleLeafIcon };

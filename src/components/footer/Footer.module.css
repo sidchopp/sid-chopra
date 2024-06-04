@@ -1,0 +1,36 @@
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    padding: 40px 0;
+    font-weight: normal
+}
+
+.footer a {
+    color: #006AFF;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer .year {
+    font-size: 0.75rem;
+}
+
+.location {
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.message {
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.maple {
+    padding: 0 5px;
+}
+
