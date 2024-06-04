@@ -1,13 +1,17 @@
-import { Footer, Hero, Projects, Technologies } from "./components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { Home, Resume } from "./pages";
 
 function App() {
   return (
-    <>
-      <Hero />
-      <Technologies />
-      <Projects />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

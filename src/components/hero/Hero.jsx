@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { GitHubIcon, LinkedinIcon } from "../../icons";
 import styles from "./Hero.module.css";
 
@@ -25,14 +26,9 @@ const Hero = () => {
         </a>
       </div>
       <div>
-        <a
-          className={styles.btn}
-          target="_blank"
-          href="https://sid-chopra.netlify.app/"
-          rel="noreferrer"
-        >
-          <span>My Resume</span>
-        </a>
+        <Link className={styles.btn} to="/resume">
+          My Resume
+        </Link>
       </div>
     </div>
   );
