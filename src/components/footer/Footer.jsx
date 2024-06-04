@@ -1,16 +1,19 @@
 import styles from "./Footer.module.css";
 import { TodayMessage } from "./TodayMessage";
-import { MapleLeafIcon } from "../../icons";
+import { MapleLeafIcon, MailIcon } from "../../icons";
 
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div>
-        Email: <a href="mailto:sidchopp@gmail.com">sidchopp@gmail.com</a>
+      <div className={styles["icon-container"]}>
+        <span className={styles.icon}>
+          <MailIcon />
+        </span>
+        <a href="mailto:sidchopp@gmail.com">sidchopp@gmail.com</a>
       </div>
       <div className={styles.location}>
         Calgary - AB
-        <span className={styles.maple}>
+        <span className={styles.icon}>
           <MapleLeafIcon />
         </span>
       </div>

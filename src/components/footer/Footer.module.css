@@ -16,13 +16,16 @@
     font-size: 0.9em;
 }
 
-.footer .year {
-    font-size: 0.75rem;
+.year {
+    font-size: 0.70rem;
 }
 
 .location {
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .message {
@@ -30,7 +33,13 @@
     font-size: 0.9rem;
 }
 
-.maple {
-    padding: 0 5px;
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    padding: 2px 5px;
 }
 
