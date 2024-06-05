@@ -1,3 +1,4 @@
 import { projectData } from "./projectData";
+import { resumeData } from "./resumeData";
 
-export { projectData };
+export { projectData, resumeData };

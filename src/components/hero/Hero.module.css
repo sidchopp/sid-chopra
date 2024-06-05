@@ -5,6 +5,7 @@
 
 .hero h1 {
     font-size: 4rem;
+    
 }
 
 .hero .name {
@@ -14,6 +15,7 @@
 .hero h2 {
     margin: 30px auto;
     font-size: 2rem;
+    color: #006AFF;
 }
 
 .hero .btn {
@@ -101,17 +103,17 @@
         grid-template-columns: 1fr;
     }
 
-    h2 {
+    .header h2 {
         font-size: 2.5em;
         text-align: center;
     }
 
-    h3 {
+    .header h3 {
         font-size: 1.5em;
         text-align: center;
     }
 
-    p {
+    .header p {
         font-size: 1em;
         text-align: center;
     }
