@@ -15,24 +15,17 @@ body, html {
   font-family: "Montserrat";
 }
 
-/* layout & nav */
 .layout {
   max-width: 1250px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 40px;
 
-}
-
-@media (max-width: 1200px) {
-  .layout {
-    padding: 0 20px;
-  }
 }
 
 @media (max-width: 400px) {
   .layout {
-    padding: 0 4px;
+    padding: 0 20px;
   }
 }
 

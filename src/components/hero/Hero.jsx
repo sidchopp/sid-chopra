@@ -8,8 +8,11 @@ const Hero = () => {
       <section className={styles.header}>
         <div>
           <h2>Siddharth Chopra</h2>
-          <h3>Software Developer</h3>
-          <p>Full Stack Developer based in Calgary</p>
+          <p>
+            Hey, I'm a <span className={styles.role}>Software Developer</span>{" "}
+            from Calgary. I love building scalable products with great user
+            experience.
+          </p>
           <div className={styles["btn-container"]}>
             <Link className={styles.btn} to="/resume">
               My Resume
