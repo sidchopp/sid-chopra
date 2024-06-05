@@ -8,12 +8,61 @@
   --backgroundColor: black;
 }
 
-body {
+body, html {
   background: var(--backgroundColor);
   color: #f1f1f1;
   margin: 0;
   font-family: "Montserrat";
 }
+
+/* layout & nav */
+.layout {
+  max-width: 1250px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .layout {
+    padding: 0 4px ;
+  }
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px auto;
+}
+
+nav .links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .name {
+  display: inline-block;
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+nav a {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
 
 
 
