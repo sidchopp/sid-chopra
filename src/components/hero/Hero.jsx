@@ -7,7 +7,9 @@ const Hero = () => {
     <div>
       <section className={styles.header}>
         <div>
-          <h2>Siddharth Chopra</h2>
+          <h2>
+            <span className={styles.sid}>Sid</span>dharth Chopra
+          </h2>
           <p>
             Hey, I'm a <span className={styles.role}>Software Developer</span>{" "}
             from Calgary. I love building scalable products with great user

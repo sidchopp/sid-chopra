@@ -8,17 +8,17 @@
 }
 
 .hero .name {
-    color: #006AFF;
+    color: var(--highlight);
 }
 
 .hero h2 {
     margin: 30px auto;
     font-size: 2rem;
-    color: #006AFF;
+    color: var(--highlight);
 }
 
 .hero .btn {
-    background-color: #006AFF;
+    background-color: var(--highlight);
     color: white;
     margin: 15px 0;
     padding: 0.75rem 1.25rem;
@@ -47,8 +47,12 @@
 }
 
 .role {
-    color:#006AFF ;
+    color:var(--highlight) ;
     font-weight: bold;
+}
+
+.sid {
+    color: var(--highlight);
 }
 
 .header {
@@ -70,7 +74,7 @@
 }
 
 .btn {
-    background-color: #006AFF;
+    background-color: var(--highlight);
     color: white;
     margin: 15px 0;
     padding: 0.75rem 1.25rem;
