@@ -3,7 +3,7 @@ import styles from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <div className={styles.projects}>
+    <div id="projects" className={styles.projects}>
       <h2 className={styles.heading}>My Projects</h2>
       <div className={`${styles.grid} ${styles.gridCols}`}>
         {projectData.map((project) => (
