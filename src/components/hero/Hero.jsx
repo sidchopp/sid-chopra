@@ -1,35 +1,23 @@
 import { Link } from "react-router-dom";
-import { GitHubIcon, LinkedinIcon } from "../../icons";
+
 import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <div className={styles.hero}>
-      <h1>
-        <span className={styles.name}>Sid</span>dharth Chopra
-      </h1>
-      <h2>Software Developer</h2>
-      <div className={styles["icons-container"]}>
-        <a
-          href="https://github.com/sidchopp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <GitHubIcon />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/sidchopp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkedinIcon />
-        </a>
-      </div>
-      <div>
-        <Link className={styles.btn} to="/resume">
-          My Resume
-        </Link>
-      </div>
+    <div>
+      <section className={styles.header}>
+        <div>
+          <h2>Siddharth Chopra</h2>
+          <h3>Software Developer</h3>
+          <p>Full Stack Developer based in Calgary</p>
+          <div className={styles["btn-container"]}>
+            <Link className={styles.btn} to="/resume">
+              My Resume
+            </Link>
+          </div>
+        </div>
+        <img className={styles.img} src="/home.jpg" alt="site banner" />
+      </section>
     </div>
   );
 };
