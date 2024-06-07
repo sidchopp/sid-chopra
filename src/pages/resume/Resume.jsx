@@ -1,6 +1,7 @@
 import { Layout } from "../../components";
 import { resumeData } from "../../data";
-import { GitHubIcon, LinkedinIcon, MailIcon } from "../../icons";
+import { SiGithub, SiLinkedin } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 import styles from "./Resume.module.css";
 
 const Resume = () => {
@@ -21,17 +22,17 @@ const Resume = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHubIcon />
+              <SiGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/sidchopp"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedinIcon />
+              <SiLinkedin />
             </a>
             <a href="mailto:sidchopp@gmail.com">
-              <MailIcon />
+              <MdEmail />
             </a>
           </div>
         </header>

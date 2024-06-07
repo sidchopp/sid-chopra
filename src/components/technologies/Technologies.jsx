@@ -1,28 +1,31 @@
-import {
-  ReactIcon,
-  NextIcon,
-  AwsIcon,
-  TypeScriptIcon,
-  JavaScriptIcon,
-  GraphqlIcon,
-  MongodbIcon,
-} from "../../icons";
 import styles from "./Technologies.module.css";
+
+import { FaNode, FaAws, FaHtml5, FaCss3 } from "react-icons/fa";
+import {
+  SiReact,
+  SiContentful,
+  SiMongodb,
+  SiGraphql,
+  SiTypescript,
+  SiJavascript,
+  SiNextdotjs,
+  SiExpress,
+} from "react-icons/si";
 
 const Technologies = () => {
   const techIconsArray = [
-    <ReactIcon />,
-    <NextIcon />,
-    <AwsIcon />,
-    <TypeScriptIcon />,
-    <JavaScriptIcon />,
-    <GraphqlIcon />,
-    <MongodbIcon />,
-    <ReactIcon />,
-    <ReactIcon />,
-    <ReactIcon />,
-    <ReactIcon />,
-    <ReactIcon />,
+    <SiReact />,
+    <SiNextdotjs />,
+    <FaNode />,
+    <FaAws />,
+    <SiTypescript />,
+    <SiJavascript />,
+    <SiExpress />,
+    <SiMongodb />,
+    <SiGraphql />,
+    <SiContentful />,
+    <FaHtml5 />,
+    <FaCss3 />,
   ];
   return (
     <div className={styles.technologies}>
