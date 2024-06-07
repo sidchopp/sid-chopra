@@ -1,9 +1,9 @@
 import { projectData } from "../../data";
-import styles from "./Projects.module.css";
+import styles from "./MyProjects.module.css";
 
-const Projects = () => {
+const MyProjects = () => {
   return (
-    <div id="projects" className={styles.projects}>
+    <div className={styles.projects}>
       <h2 className={styles.heading}>My Projects</h2>
       <div className={`${styles.grid} ${styles.gridCols}`}>
         {projectData.map((project) => (
@@ -35,4 +35,4 @@ const Projects = () => {
   );
 };
 
-export { Projects };
+export { MyProjects };

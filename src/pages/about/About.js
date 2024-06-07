@@ -1,4 +1,4 @@
-import { Layout, Projects } from "../../components";
+import { Layout } from "../../components";
 
 const About = () => {
   return (
@@ -26,10 +26,6 @@ const About = () => {
           insights from my education and experience cutting-edge solutions. Join
           us on our journey of discovery and innovation.
         </p>
-      </div>
-      <div>
-        <h2>My Projects</h2>
-        <Projects />
       </div>
     </Layout>
   );

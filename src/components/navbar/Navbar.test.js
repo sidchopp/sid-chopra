@@ -20,6 +20,6 @@ describe("Navbar Component", () => {
 
     expect(homeLink).toHaveAttribute("href", "/");
     expect(aboutLink).toHaveAttribute("href", "/about");
-    expect(projectsLink).toHaveAttribute("href", "#projects");
+    expect(projectsLink).toHaveAttribute("href", "/projects");
   });
 });
