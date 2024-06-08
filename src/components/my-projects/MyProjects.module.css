@@ -1,33 +1,22 @@
 
 .projects  {
-    margin: 50px 40px;
+    margin: 50px 0;
 }
 
 .projects .heading {
     text-align: center;
     font-size: 1.5rem;
-    margin:  90px 0;
+    margin:  50px 0;
 }
 
- .grid {
+.grid {
     display: grid;
     gap: 64px;
+    padding: 20px 0;
 }
 
- .gridCols {
+.gridCols {
     grid-template-columns: repeat(1, 1fr);
-}
-
-@media (min-width: 800px) {
-    .gridCols {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1080px) {
-    .gridCols {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 article {
@@ -40,7 +29,7 @@ article {
     background-color: #f3f4f6;
 }
 
- .image {
+.image {
     aspect-ratio: 4/3;
     object-fit: cover;
     width: 100%;
@@ -53,19 +42,19 @@ article {
     padding: 24px;
 }
 
- .title {
+.title {
     font-weight: bold;
     line-height: 1.1;
     color: #374151;
 }
 
- .techUsed {
+.techUsed {
     font-size: 14px;
     color: #6b7280;
     margin: 0;
 }
 
- .subtitle {
+.subtitle {
     font-size: 16px;
     color: #4b5563;
     flex: 1;
@@ -73,8 +62,23 @@ article {
 
 .projects-links {
     text-decoration: none;
+    transition: transform 0.5s ease, border 0.5s ease;
+    border-radius: 0.6rem;
 }
 
 .projects-links:hover {
-    transform: translate(0, -1.2px);
+    transform: translate(0, -15px);
+    border: 1.5px solid var(--highlight);
+}
+
+@media (min-width: 800px) {
+    .gridCols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1080px) {
+    .gridCols {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
