@@ -21,7 +21,9 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <img className={styles.img} src="/home.jpg" alt="site banner" />
+        <div className={styles["img-container"]}>
+          <img className={styles.img} src="/home.jpg" alt="site banner" />
+        </div>
       </section>
     </div>
   );
