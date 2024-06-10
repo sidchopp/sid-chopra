@@ -25,7 +25,7 @@ describe("Hero Component", () => {
       </MemoryRouter>
     );
 
-    const heading = screen.getByRole("heading", { level: 2 });
+    const heading = screen.getByRole("heading", { level: 1 });
 
     expect(heading).toBeInTheDocument();
     expect(heading).toHaveTextContent(/^Siddharth Chopra$/i);
