@@ -22,7 +22,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles["img-container"]}>
-          <img className={styles.img} src="/home.jpg" alt="site banner" />
+          <img className={styles.img} src="/sketch.jpg" alt="myself" />
         </div>
       </section>
     </div>
