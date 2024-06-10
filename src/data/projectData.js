@@ -112,7 +112,7 @@ const projectData = [
     techUsed: "Node, React",
   },
   {
-    id: "7",
+    id: "14",
     title: "My Projects",
     description: [
       "You are watching this project in action at the moment - A compilation of all my Projects.",
