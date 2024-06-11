@@ -11,8 +11,8 @@ const Hero = () => {
         </h1>
         <p>
           Hey, I'm a <span className={styles.role}>Software Developer</span>{" "}
-          from Calgary. I love building scalable products with great user
-          experience.
+          based in sunny Calgary, Canada. I love building web products with
+          great user experience.
         </p>
         <div className={styles["btn-container"]}>
           <Link className={styles.btn} to="/resume">

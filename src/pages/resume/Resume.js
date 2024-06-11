@@ -37,7 +37,6 @@ const Resume = () => {
           </div>
         </header>
         <section className={styles.summary}>
-          <h2>Professional Summary</h2>
           <p>{summary}</p>
         </section>
         {sections.map((section, index) => (

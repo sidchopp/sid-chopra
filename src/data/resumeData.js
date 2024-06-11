@@ -17,7 +17,7 @@ const resumeData = {
         "Strong emphasis on fostering excellent UI/UX and following software development best practices, utilizing CI/CD for streamlined processes",
         "Effective collaboration with cross-functional teams, stakeholders, designers, content teams, and product owners to manage multiple projects with parallel deadlines",
         "Analytical problem-solving skills, ensuring swift issue resolution, and maintaining professional communication with management, internal teams and clients",
-        "Passionate for knowledge sharing within the team, active support for business developments, and genuine excitement for continuous learning of new technologies",
+        "Passionate for knowledge sharing within the team, and genuine excitement for continuous learning of new technologies",
       ],
     },
     {
@@ -96,8 +96,8 @@ const resumeData = {
     {
       title: "TECHNICAL SKILLS",
       items: [
-        "Client-side: React.js, Next.js, JavaScript, TypeScript, HTML5, CSS3, GraphQL, JEST Testing, MUI, tailwind CSS",
-        "Server-side: Node.js, AWS, Express, REST APIs, MongoDB, PostgreSQL, Contentful CMS",
+        "Client-side: React.js, Next.js, JavaScript, TypeScript, HTML, CSS, JEST Testing, MUI, tailwind CSS",
+        "Server-side: Node.js, AWS, Express, REST APIs, GraphQL, MongoDB, PostgreSQL, Contentful CMS",
         "Development: Scrum, Agile, Git, GitHub, Visual Studio Code",
         "Deployment: CICD, Vercel, Heroku, AWS, Netlify",
       ],

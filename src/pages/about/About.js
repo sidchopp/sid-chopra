@@ -21,7 +21,7 @@ const About = () => {
           After earning my Master's degree, I started as a Physics and
           Mathematics Instructor, fueled by my childhood fascination with
           science and technology. I absolutely loved sharing the wonders of
-          Universe with my students over the next few years, sparking their
+          universe with my students over the next few years, sparking their
           curiosity as we went along.
         </p>
         <p>
