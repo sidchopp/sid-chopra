@@ -8,6 +8,7 @@ const TodayMessage = () => {
     "Friday",
     "Saturday",
   ];
+
   return (
     <>
       Hope you are enjoying <i>{days[new Date().getDay()]} !</i>
