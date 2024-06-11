@@ -1,35 +1,45 @@
 import { Layout } from "../../components";
+import styles from "./About.module.css";
 
 const About = () => {
   return (
     <Layout>
-      <div>
+      <div className={styles.about}>
         <h2>About</h2>
         <p>
-          Dedicated my initial professional years to teaching physics, inspiring
-          countless students with my passion for unraveling the mysteries of the
-          universe. My journey, however, transcended the boundaries of physics,
-          leading me into the realm of software development.
+          <p>Hey there, I'm Sid.</p>
+          I'm a Software Developer based in sunny Calgary, Canada. I love
+          creating scalable web products with great user experience that aligns
+          with evolving business requirements.
         </p>
-      </div>
-      <div>
+        <p>
+          When I'm not buried in code, you'll catch me reading, exploring new
+          things, or traveling.
+        </p>
         <h2>Story</h2>
         <p>
-          Fascinated by Science and Technology, I started coding as a hobby,
-          crafting simple programs for fun. As my skills grew, so did my
-          passion. I explored different languages, tech stacks and projects,
-          collaborating with others along the way. Now, having worked as a
-          software developer for the last few years, I'm eager to continue to
-          learn new tech and making my mark in this dynamic field.
+          After earning my Master's degree, I started as a Physics and
+          Mathematics Instructor, fueled by my childhood fascination with
+          science and technology. I absolutely loved sharing the wonders of
+          Universe with my students over the next few years, sparking their
+          curiosity as we went along.
         </p>
-      </div>
-      <div>
-        <h2>Mission</h2>
         <p>
-          To continuously learn, improve, and tackle real-world problems through
-          technology. By refining my skills and embracing new challenges, I
-          strive to make a meaningful impact and drive positive change in our
-          evolving world.
+          As my journey unfolded, I ventured beyond the confines of academia and
+          into the realm of software development. It all began with a simple
+          <i> curiosity</i>. Little did I know, diving into this new realm would
+          prove just as thrilling as exploring the cosmos and since then there
+          is no turning back.
+        </p>
+        <p>
+          In my capacity as a Software Developer for the past few years, I've
+          engaged in a myriad of projects, driven by a relentless curiosity to
+          explore and leverage emerging technologies, ensuring the delivery of
+          high-quality software solutions.
+        </p>
+        <h2>Goal</h2>
+        <p>
+          To keep pushing the envelope in technology to find real-world fixes.
         </p>
       </div>
     </Layout>
