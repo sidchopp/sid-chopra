@@ -10,12 +10,6 @@ h1 {
     font-size: 4rem;
 }
 
-h3 {
-    font-size: 3em;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
 .btn {
     background-color: var(--highlight);
     color: white;
@@ -77,7 +71,7 @@ h3 {
 }
 
 @media (max-width: 800px) {
-    .header {
+    .hero{
         grid-template-columns: 1fr;
     }
     h1 {

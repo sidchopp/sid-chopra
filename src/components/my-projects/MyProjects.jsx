@@ -25,7 +25,7 @@ const MyProjects = () => {
               <div className={styles.content}>
                 <h3 className={styles.title}>{project.title}</h3>
                 <p className={styles.techUsed}>Tech: {project.techUsed}</p>
-                <p className={styles.subtitle}>{project.description}</p>
+                <p className={styles.description}>{project.description}</p>
               </div>
             </article>
           </a>

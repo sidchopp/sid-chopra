@@ -1,12 +1,11 @@
-
 .projects  {
-    margin: 50px 0;
+    padding: 50px 0;
 }
 
 .projects .heading {
     text-align: center;
     font-size: 1.5rem;
-    margin:  50px 0;
+    padding:  50px 0;
 }
 
 .grid {
@@ -35,7 +34,7 @@ article {
     width: 100%;
 }
 
-.projects .content {
+.content {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -46,18 +45,21 @@ article {
     font-weight: bold;
     line-height: 1.1;
     color: #374151;
+    text-align: left;
 }
 
 .techUsed {
     font-size: 14px;
     color: #6b7280;
     margin: 0;
+    text-align: left;
 }
 
-.subtitle {
-    font-size: 16px;
+.description {
+    font-size: 14px;
     color: #4b5563;
     flex: 1;
+    text-align: left;
 }
 
 .projects-links {
