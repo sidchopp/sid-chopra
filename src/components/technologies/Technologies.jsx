@@ -29,10 +29,14 @@ const Technologies = () => {
   ];
   return (
     <div className={styles.technologies}>
-      <div className={styles.heading}>Core technologies</div>
+      <h2 className={styles.heading}>Core technologies</h2>
       <div className={styles["grid-container"]}>
         {techIconsArray.map((item, index) => (
-          <div key={index} className={styles["grid-item"]}>
+          <div
+            key={index}
+            className={styles["grid-item"]}
+            data-testid="tech-icon"
+          >
             {item}
           </div>
         ))}
