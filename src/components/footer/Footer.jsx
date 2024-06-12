@@ -6,11 +6,8 @@ import { FaCanadianMapleLeaf } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className={styles["icon-container"]}>
-        <span className={styles.icon}>
-          <MdEmail />
-        </span>
-        <a href="mailto:sidchopp@gmail.com">sidchopp@gmail.com</a>
+      <div className={styles.email}>
+        <MdEmail /> <a href="mailto:sidchopp@gmail.com">sidchopp@gmail.com</a>
       </div>
       <div className={styles.location}>
         Calgary - AB

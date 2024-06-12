@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
 .message {
@@ -33,13 +34,10 @@
     font-size: 0.9rem;
 }
 
-.icon-container {
+.email {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.icon {
-    padding: 2px 5px;
+    gap: 5px;
 }
 
