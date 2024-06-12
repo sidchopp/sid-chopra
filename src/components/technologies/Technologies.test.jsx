@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { Technologies } from "./Technologies";
+import { techIcons } from "./techIcons";
 
 describe("Technologies Component", () => {
   test("Render heading", () => {
@@ -15,8 +16,13 @@ describe("Technologies Component", () => {
   test("Render list of Core Technologies", () => {
     render(<Technologies />);
 
+    techIcons.forEach((tech) => {
+      const icon = screen.getByLabelText(tech.label);
+      expect(icon).toBeInTheDocument();
+    });
+
     const gridItems = screen.getAllByTestId("tech-icon");
 
-    expect(gridItems).toHaveLength(12);
+    expect(gridItems).toHaveLength(13);
   });
 });
