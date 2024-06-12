@@ -1,6 +1,21 @@
 import { render, screen } from "@testing-library/react";
 import { Technologies } from "./Technologies";
-import { techIcons } from "./techIcons";
+
+const technologies = [
+  "React",
+  "Next",
+  "Node",
+  "AWS",
+  "TypeScript",
+  "JavaScript",
+  "Express",
+  "MongoDB",
+  "GraphQL",
+  "Contentful",
+  "HTML5",
+  "CSS3",
+  "Jest",
+];
 
 describe("Technologies Component", () => {
   test("Render heading", () => {
@@ -16,8 +31,8 @@ describe("Technologies Component", () => {
   test("Render list of Core Technologies", () => {
     render(<Technologies />);
 
-    techIcons.forEach((tech) => {
-      const icon = screen.getByLabelText(tech.label);
+    technologies.forEach((tech) => {
+      const icon = screen.getByLabelText(tech);
       expect(icon).toBeInTheDocument();
     });
 
