@@ -28,10 +28,24 @@ article {
     background-color: #f3f4f6;
 }
 
+.article:hover .image {
+    transform: scale(1.1);
+}
+
+.image-container {
+    overflow: hidden;
+}
+
 .image {
-    aspect-ratio: 4/3;
     object-fit: cover;
+    display: block;
     width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.article:hover .image {
+    transform: scale(1.1);
 }
 
 .content {
@@ -47,6 +61,8 @@ article {
     color: #374151;
     text-align: left;
 }
+
+
 
 .techUsed {
     font-size: 14px;
@@ -64,14 +80,11 @@ article {
 
 .projects-links {
     text-decoration: none;
-    transition: transform 0.5s ease, border 0.5s ease;
-    border-radius: 0.6rem;
+    /* transition: transform 0.5s ease, border 0.5s ease; */
+    /* border-radius: 0.6rem; */
 }
 
-.projects-links:hover {
-    transform: translate(0, -15px);
-    border: 1.5px solid var(--highlight);
-}
+
 
 @media (min-width: 800px) {
     .gridCols {
