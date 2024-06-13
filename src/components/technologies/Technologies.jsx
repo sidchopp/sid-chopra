@@ -4,7 +4,7 @@ import styles from "./Technologies.module.css";
 const Technologies = () => {
   return (
     <div className={styles.technologies}>
-      <h2 className={styles.heading}>Core technologies</h2>
+      <h2 className={styles.heading}>Core Technologies</h2>
       <div className={styles["grid-container"]}>
         {techIcons.map((item, index) => (
           <div
