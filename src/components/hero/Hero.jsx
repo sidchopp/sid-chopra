@@ -1,11 +1,30 @@
 import { Link } from "react-router-dom";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 import styles from "./Hero.module.css";
 
 const Hero = () => {
+  const [ref, inView, willChange] = useIntersectionObserver({
+    willTransform: true,
+  });
+
+  let className = `${styles.element} `;
+
+  if (inView) {
+    className += `${styles.elementInView} `;
+  } else {
+    className += `${styles.elementNotInView} `;
+  }
+
+  if (willChange === "auto") {
+    className += `${styles.willChangeAuto} `;
+  } else if (willChange === "transform") {
+    className += `${styles.willChangeTransform} `;
+  }
+
   return (
     <div className={styles.hero}>
-      <div>
+      <div ref={ref} className={className.trim()}>
         <h1>
           <span className={styles.sid}>Sid</span>dharth Chopra
         </h1>

@@ -57,6 +57,36 @@
     align-items: center;
 }
 
+/* Intersection observer styles */
+
+.element {
+    transition: all 800ms ease-out;
+    transform: translateX(0) scale(1);
+    opacity: 1;
+}
+
+/* Element is in view */
+.elementInView {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Element is not in view */
+.elementNotInView {
+    opacity: 0;
+    transform: translateX(-20px) scale(1.25);
+}
+
+/* Will change auto */
+.willChangeAuto {
+    will-change: auto;
+}
+
+/* Will change transform */
+.willChangeTransform {
+    will-change: transform;
+}
+
 @media (max-width: 1100px) {
     .hero h1 {
         font-size: 3.5rem;
@@ -100,5 +130,14 @@
         height: 200px;
         border-radius: 50%;
     }
+    .element {
+        transform: translateY(0) scale(1);
+    }
+    .elementNotInView {
+        transform: translateY(-40px) scale(1.20);
+    }
 }
+
+
+
 
