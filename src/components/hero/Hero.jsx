@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import styles from "./Hero.module.css";
+import Loader from "./Loader";
 
 const Hero = () => {
   return (
@@ -18,6 +20,15 @@ const Hero = () => {
           <Link className={styles.btn} to="/resume">
             My Resume
           </Link>
+        </div>
+        <div className={styles.loaderContainer}>
+          <motion.div
+            className={styles.loaderWrapper}
+            initial="hidden"
+            animate="visible"
+          >
+            <Loader />
+          </motion.div>
         </div>
       </div>
       <div className={styles["img-container"]}>
