@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About, Home, Resume, Projects } from "./pages";
-import { AnimatedPage } from "./components/layout/AnimatedPage";
+import { AnimatedPage } from "./components";
 
 function App() {
   return (
