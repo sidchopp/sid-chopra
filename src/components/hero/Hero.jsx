@@ -1,5 +1,6 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import styles from "./Hero.module.css";
 
 const headingVariants = {
@@ -21,12 +22,15 @@ const resumeVariants = {
 };
 
 const Hero = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: false });
+
   return (
     <div className={styles.hero}>
-      <div>
+      <div ref={ref}>
         <motion.h1
           initial="initial"
-          animate="animate"
+          animate={inView ? "animate" : "initial"}
           variants={headingVariants}
           transition={headingVariants.transition}
         >
@@ -34,7 +38,7 @@ const Hero = () => {
         </motion.h1>
         <motion.p
           initial="initial"
-          animate="animate"
+          animate={inView ? "animate" : "initial"}
           variants={introVariants}
           transition={introVariants.transition}
         >
@@ -45,7 +49,7 @@ const Hero = () => {
         <motion.div
           className={styles["btn-container"]}
           initial="initial"
-          animate="animate"
+          animate={inView ? "animate" : "initial"}
           variants={resumeVariants}
           transition={resumeVariants.transition}
         >

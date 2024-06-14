@@ -3,12 +3,6 @@ import { MyProjectCard } from "./MyProjectCard";
 import { projectData } from "../../data";
 import styles from "./MyProjects.module.css";
 
-const hyperlinkVariants = {
-  initial: { opacity: 0, y: 50 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5, ease: "easeOut" },
-};
-
 const MyProjects = () => {
   return (
     <LazyMotion features={domAnimation}>
@@ -22,10 +16,6 @@ const MyProjects = () => {
               target="_blank"
               rel="noopener noreferrer"
               key={project.id}
-              initial="initial"
-              animate="animate"
-              transition={hyperlinkVariants.transition}
-              variants={hyperlinkVariants}
             >
               <MyProjectCard project={project} />
             </m.a>
