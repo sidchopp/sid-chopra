@@ -32,7 +32,24 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles["img-container"]}>
-        <img className={styles.img} src="/home.jpg" alt="myself" />
+        {/* <img className={styles.img} src="/home.jpg" alt="myself" /> */}
+        <motion.div
+          className="box"
+          animate={{
+            scale: [1, 1.05, 1.05, 1, 1],
+            rotate: [0, 0, 180, 180, 0],
+            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeat: 0,
+            repeatDelay: 1,
+          }}
+        >
+          <img className={styles.img} src="/home.jpg" alt="myself" />
+        </motion.div>
       </div>
     </div>
   );
