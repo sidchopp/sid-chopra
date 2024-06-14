@@ -1,40 +1,38 @@
+import { LazyMotion, domAnimation, m } from "framer-motion";
+import { MyProjectCard } from "./MyProjectCard";
 import { projectData } from "../../data";
 import styles from "./MyProjects.module.css";
 
+const hyperlinkVariants = {
+  initial: { opacity: 0, y: 50 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
+
 const MyProjects = () => {
   return (
-    <div className={styles.projects}>
-      <h2 className={styles.heading}>My Projects</h2>
-      <div className={`${styles.grid} ${styles.gridCols}`}>
-        {projectData.map((project) => (
-          <a
-            className={styles["projects-links"]}
-            href={project.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            key={project.id}
-          >
-            <article className={styles.article}>
-              <span className={styles["image-container"]}>
-                <img
-                  alt="placeholder"
-                  className={styles.image}
-                  height={263}
-                  src={project.img}
-                  width={350}
-                />
-              </span>
-
-              <div className={styles.content}>
-                <h3 className={styles.title}>{project.title}</h3>
-                <p className={styles.techUsed}>Tech: {project.techUsed}</p>
-                <p className={styles.description}>{project.description}</p>
-              </div>
-            </article>
-          </a>
-        ))}
+    <LazyMotion features={domAnimation}>
+      <div className={styles.projects}>
+        <h2 className={styles.heading}>My Projects</h2>
+        <div className={`${styles.grid} ${styles.gridCols}`}>
+          {projectData.map((project) => (
+            <m.a
+              className={styles["projects-links"]}
+              href={project.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={project.id}
+              initial="initial"
+              animate="animate"
+              transition={hyperlinkVariants.transition}
+              variants={hyperlinkVariants}
+            >
+              <MyProjectCard project={project} />
+            </m.a>
+          ))}
+        </div>
       </div>
-    </div>
+    </LazyMotion>
   );
 };
 
