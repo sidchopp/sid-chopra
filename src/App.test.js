@@ -1,6 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
+// Mocking framer-motion: Controls the behavior of useInView across all usages in the component,
+jest.mock("framer-motion", () => {
+  const originalModule = jest.requireActual("framer-motion");
+  return {
+    ...originalModule,
+    useInView: jest.fn().mockReturnValue(true),
+  };
+});
+
 test("renders SC or home page link", () => {
   render(<App />);
 
