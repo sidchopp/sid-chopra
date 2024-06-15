@@ -21,13 +21,22 @@ const resumeVariants = {
   transition: { duration: 1.0, delay: 0.1, ease: "easeOut" },
 };
 
+const imgVariants = {
+  animate: { scale: [1, 1.05, 1] },
+  transition: {
+    duration: 1,
+    times: [0.2, 0.8, 1],
+    ease: "easeInOut",
+  },
+};
+
 const Hero = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: false });
 
   return (
-    <div className={styles.hero}>
-      <div ref={ref}>
+    <div className={styles.hero} ref={ref}>
+      <div>
         <motion.h1
           initial="initial"
           animate={inView ? "animate" : "initial"}
@@ -59,7 +68,15 @@ const Hero = () => {
         </motion.div>
       </div>
       <div className={styles["img-container"]}>
-        <img className={styles.img} src="/home.jpg" alt="myself" />
+        <motion.img
+          className={styles.img}
+          src="/home.jpg"
+          alt="myself"
+          initial="initial"
+          animate={inView ? "animate" : "initial"}
+          variants={imgVariants}
+          transition={imgVariants.transition}
+        />
       </div>
     </div>
   );
