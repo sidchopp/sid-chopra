@@ -1,4 +1,4 @@
-import { Layout } from "../../components";
+import { Layout, ProgressBar } from "../../components";
 import { resumeData } from "../../data";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
@@ -9,6 +9,7 @@ const Resume = () => {
 
   return (
     <Layout>
+      <ProgressBar />
       <div className={styles.resume}>
         <header className={styles.header}>
           <h1>{personalDetails.name}</h1>
