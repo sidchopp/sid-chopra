@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 import styles from "./Hero.module.css";
+import { HeroImage } from "./HeroImage";
 
 const headingVariants = {
   initial: { x: "-100vw" },
@@ -19,15 +20,6 @@ const resumeVariants = {
   initial: { x: "-100vw" },
   animate: { x: 0 },
   transition: { duration: 1.0, delay: 0.1, ease: "easeOut" },
-};
-
-const imgVariants = {
-  animate: { scale: [1, 1.05, 1] },
-  transition: {
-    duration: 1,
-    times: [0.2, 0.8, 1],
-    ease: "easeInOut",
-  },
 };
 
 const Hero = () => {
@@ -67,17 +59,9 @@ const Hero = () => {
           </Link>
         </motion.div>
       </div>
-      <div className={styles["img-container"]}>
-        <motion.img
-          className={styles.img}
-          src="/home.jpg"
-          alt="myself"
-          initial="initial"
-          animate={inView ? "animate" : "initial"}
-          variants={imgVariants}
-          transition={imgVariants.transition}
-        />
-      </div>
+      <motion.div className={styles["img-container"]}>
+        <HeroImage inView={inView} />
+      </motion.div>
     </div>
   );
 };

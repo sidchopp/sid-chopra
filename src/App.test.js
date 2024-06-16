@@ -1,47 +1,40 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-// Mocking framer-motion: Controls the behavior of useInView across all usages in the component,
-jest.mock("framer-motion", () => {
-  const originalModule = jest.requireActual("framer-motion");
-  return {
-    ...originalModule,
-    useInView: jest.fn().mockReturnValue(true),
-  };
-});
+describe("APP Component", () => {
+  test("renders SC or home page link", () => {
+    render(<App />);
 
-test("renders SC or home page link", () => {
-  render(<App />);
+    const scLink = screen.getByRole("link", { name: "SC" });
 
-  const scLink = screen.getByRole("link", { name: "SC" });
+    expect(scLink).toBeInTheDocument();
+    expect(scLink).toHaveAttribute("href", "/");
+  });
 
-  expect(scLink).toBeInTheDocument();
-  expect(scLink).toHaveAttribute("href", "/");
-});
+  test("renders About page link", () => {
+    render(<App />);
 
-test("renders About page link", () => {
-  render(<App />);
+    const aboutLink = screen.getByRole("link", { name: "About" });
 
-  const aboutLink = screen.getByRole("link", { name: "About" });
+    expect(aboutLink).toBeInTheDocument();
+    expect(aboutLink).toHaveAttribute("href", "/about");
+  });
 
-  expect(aboutLink).toBeInTheDocument();
-  expect(aboutLink).toHaveAttribute("href", "/about");
-});
+  test("renders Projects page link", () => {
+    render(<App />);
 
-test("renders Projects page link", () => {
-  render(<App />);
+    const projectsLink = screen.getByRole("link", { name: "Projects" });
 
-  const projectsLink = screen.getByRole("link", { name: "Projects" });
+    expect(projectsLink).toBeInTheDocument();
+    expect(projectsLink).toHaveAttribute("href", "/projects");
+  });
 
-  expect(projectsLink).toBeInTheDocument();
-  expect(projectsLink).toHaveAttribute("href", "/projects");
-});
+  test("renders Resume page link", () => {
+    render(<App />);
 
-test("renders Resume page link", () => {
-  render(<App />);
+    const resumeLink = screen.getByRole("link", { name: "My Resume" });
 
-  const resumeLink = screen.getByRole("link", { name: "My Resume" });
-
-  expect(resumeLink).toBeInTheDocument();
-  expect(resumeLink).toHaveAttribute("href", "/resume");
+    expect(resumeLink).toBeInTheDocument();
+    expect(resumeLink).toHaveAttribute("href", "/resume");
+  });
 });
