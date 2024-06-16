@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
-import styles from "./Hero.module.css";
 import { HeroImage } from "./HeroImage";
+import styles from "./Hero.module.css";
 
 const headingVariants = {
   initial: { x: "-100vw" },

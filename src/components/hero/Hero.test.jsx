@@ -2,14 +2,6 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { Hero } from "./Hero";
 
-// Mocking framer-motion: Controls the behavior of useInView across all usages in the component,
-jest.mock("framer-motion", () => {
-  return {
-    ...jest.requireActual("framer-motion"),
-    useInView: jest.fn(),
-  };
-});
-
 describe("Hero Component", () => {
   test("Should show My Resume Link", () => {
     // Render the component within a MemoryRouter as we are using Router for Link
