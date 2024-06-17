@@ -15,4 +15,7 @@ const Navbar = () => {
   );
 };
 
+// CHECKING- To see this component name to show up in prod (with React-Dev tools )
+Navbar.displayName = "Navbar Checking..";
+
 export { Navbar };
