@@ -8,7 +8,7 @@ const resumeData = {
     location: "Calgary- AB",
   },
   summary:
-    "Innovative, task-driven Full Stack Software Developer with 4+ years of expertise in both Frontend and Backend development, proven ability to adapt in both self-starting and collaborative environments. Proficient in React.js, Next.js, Node.js, JavaScript, TypeScript, GraphQL, AWS and more. Adept in navigating fast-paced dynamic work environments, excel in delivering innovative solutions that align with evolving business requirements.",
+    "Innovative, task-driven Full Stack Software Developer with expertise in both Frontend and Backend development, proven ability to adapt in both self-starting and collaborative environments. Proficient in React.js, Next.js, Node.js, JavaScript, TypeScript, GraphQL, AWS and more. Adept in navigating fast-paced dynamic work environments, excel in delivering innovative solutions that align with evolving business requirements.",
   sections: [
     {
       title: "PROFESSIONAL SUMMARY",
