@@ -20,10 +20,10 @@ const Footer = () => {
         </div>
       </div>
       <div style={{ marginTop: "80px" }}>
-        <div className={styles.year}>© 2024. Siddharth Chopra</div>
         <div className={styles.message}>
           <TodayMessage />
         </div>
+        <div className={styles.year}>© 2024. Siddharth Chopra</div>
       </div>
     </div>
   );
