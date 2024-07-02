@@ -1,10 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About, Home, Resume, Projects } from "./pages";
 import { AnimatedPage } from "./components";
+import { UseScrollPosition } from "./lib/hooks/scroll-position";
 
 function App() {
   return (
     <BrowserRouter>
+      <UseScrollPosition />
       <Routes>
         <Route
           path="/"
