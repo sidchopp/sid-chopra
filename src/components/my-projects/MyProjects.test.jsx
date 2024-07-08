@@ -8,7 +8,7 @@ describe("My Projects Component", () => {
     const heading = screen.getByRole("heading", { level: 2 });
 
     expect(heading).toBeInTheDocument();
-    expect(heading).toHaveTextContent(/my projects/i);
+    expect(heading).toHaveTextContent(/personal projects/i);
   });
 
   test("render my projects", () => {
