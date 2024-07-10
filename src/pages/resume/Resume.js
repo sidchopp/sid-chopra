@@ -48,6 +48,16 @@ const Resume = () => {
                 {section.items.map((item, idx) =>
                   typeof item === "string" ? (
                     <li key={idx}>{item}</li>
+                  ) : item.url ? (
+                    <li key={idx}>
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
                   ) : (
                     <div key={idx}>
                       <h3>
