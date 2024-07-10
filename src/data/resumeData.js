@@ -87,10 +87,16 @@ const resumeData = {
       ],
     },
     {
-      title: "CERTIFICATIONS",
+      title: "CLOUD CERTIFICATIONS",
       items: [
-        "AWS Certified Developer - Associate",
-        "AWS Certified Cloud Practitioner",
+        {
+          name: "AWS Certified Developer - Associate",
+          url: "https://www.credly.com/badges/73443cb2-75ab-4fce-97b6-771d7be5912a?source=linked_in_profile",
+        },
+        {
+          name: "AWS Certified Cloud Practitioner",
+          url: "https://www.credly.com/badges/86e0a91c-4f81-4915-b135-3a527e56e9da/public_url",
+        },
       ],
     },
     {
