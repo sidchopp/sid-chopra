@@ -1,6 +1,12 @@
-const projectData = [
+const generateProjectDataWithDynamicIds = (data) => {
+  return data.map((item, index) => ({
+    ...item,
+    id: (index + 1).toString(),
+  }));
+};
+
+const rawProjectData = [
   {
-    id: "13",
     title: "FIT Track",
     description: [
       "Get Stronger Every Day with Personalized Workout Plans Tailored Just for You.",
@@ -10,7 +16,6 @@ const projectData = [
     techUsed: "MERN stack",
   },
   {
-    id: "12",
     title: "Fin Track",
     description: [
       "Track every dollar effortlessly and stay stress-free about your money.",
@@ -20,17 +25,6 @@ const projectData = [
     techUsed: "React, Firebase",
   },
   {
-    id: "11",
-    title: "Hotel Reservation",
-    description: [
-      "Welcome to my Angular adventure: A basic Hotel reservation app.",
-    ],
-    img: "https://images.unsplash.com/photo-1517840901100-8179e982acb7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    website: "https://angular-hotel-reservation.netlify.app/",
-    techUsed: "Angular, Node",
-  },
-  {
-    id: "10",
     title: "Weather Wise Trip",
     description: [
       "Do not let the weather rain on your parade – plan your perfect trip.",
@@ -40,7 +34,6 @@ const projectData = [
     techUsed: "Next, Node, TypeScript",
   },
   {
-    id: "9",
     title: "Blogs",
     description: [
       "A list of some interesting random articles. More to be added soon.",
@@ -50,7 +43,6 @@ const projectData = [
     techUsed: "Next, GraphQL, Contentful",
   },
   {
-    id: "8",
     title: "Canadian Holidays",
     description: [
       "A province-wise list of Canadian public and federal holidays for all 13 provinces.",
@@ -60,7 +52,6 @@ const projectData = [
     techUsed: "React, TypeScript, Node",
   },
   {
-    id: "7",
     title: "Space X",
     description: [
       "A User can view and request info about SpaceX, its past launches and rockets used for those launches.",
@@ -70,7 +61,15 @@ const projectData = [
     techUsed: "React, GraphQL, Node",
   },
   {
-    id: "6",
+    title: "Hotel Reservation",
+    description: [
+      "Welcome to my Angular adventure: A basic Hotel reservation app.",
+    ],
+    img: "https://images.unsplash.com/photo-1517840901100-8179e982acb7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    website: "https://angular-hotel-reservation.netlify.app/",
+    techUsed: "Angular, Node",
+  },
+  {
     title: "Mobile Shopping Cart",
     description: [
       "Redux Toolkit is used with React.js to create this Project.",
@@ -81,7 +80,6 @@ const projectData = [
   },
 
   {
-    id: "5",
     title: "All Weather",
     description: [
       "It has some cool features like graphical display of temperatures, weather forecast, etc.",
@@ -91,7 +89,6 @@ const projectData = [
     techUsed: "Node, React",
   },
   {
-    id: "4",
     title: "About My Location",
     description: [
       "This App will display the exact location of a User along with a lot of other useful info.",
@@ -102,7 +99,6 @@ const projectData = [
   },
 
   {
-    id: "3",
     title: "Periodic Table",
     description: [
       "This Periodic Table App is a tabular display of all the known chemical elements.",
@@ -112,7 +108,6 @@ const projectData = [
     techUsed: "Node, React",
   },
   {
-    id: "14",
     title: "My Projects",
     description: [
       "You are watching this project in action at the moment - A compilation of all my Projects.",
@@ -122,7 +117,6 @@ const projectData = [
     techUsed: "Node, React",
   },
   {
-    id: "2",
     title: "Guess My Number",
     description: [
       "Try and guess a randomly generated whole number between 0 to 20, in minimum attempts.",
@@ -132,7 +126,6 @@ const projectData = [
     techUsed: "HTML, CSS, Vanilla JavaScript",
   },
   {
-    id: "1",
     title: "Seasons",
     description: [
       "This App will show a  season (Spring, Summer, Winter or Fall) based on the User's location.",
@@ -142,5 +135,7 @@ const projectData = [
     techUsed: "Node, React",
   },
 ];
+
+const projectData = generateProjectDataWithDynamicIds(rawProjectData);
 
 export { projectData };
