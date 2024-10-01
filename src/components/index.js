@@ -5,6 +5,7 @@ import { Footer } from "./footer/Footer";
 import { Layout } from "./layout/Layout";
 import { AnimatedPage } from "./framer-motion/AnimatedPage";
 import { ProgressBar } from "./progress-bar/ProgressBar";
+import { InfiniteScroll } from "./infinite-scroll/InfiniteScroll";
 
 export {
   Hero,
@@ -14,4 +15,5 @@ export {
   Layout,
   AnimatedPage,
   ProgressBar,
+  InfiniteScroll,
 };
