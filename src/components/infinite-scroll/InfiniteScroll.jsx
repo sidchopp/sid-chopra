@@ -5,8 +5,8 @@ import { techIcons } from "../technologies/techIcons.js";
 import styles from "./InfiniteScroll.module.css";
 
 const InfiniteScroll = ({ title }) => {
-  const FAST_DURATION = 25;
-  const SLOW_DURATION = 75;
+  const FAST_DURATION = 15;
+  const SLOW_DURATION = 35;
 
   const [duration, setDuration] = useState(FAST_DURATION);
   let [ref, { width }] = useMeasure();
@@ -58,11 +58,13 @@ const InfiniteScroll = ({ title }) => {
           setDuration(FAST_DURATION);
         }}
       >
-        {[...techIcons, ...techIcons, ...techIcons, ...techIcons].map(
-          (item, idx) => (
-            <span key={idx}>{item.icon}</span>
-          )
-        )}
+        {Array(3)
+          .fill(techIcons)
+          .flatMap((icons, outerIdx) =>
+            icons.map((item, idx) => (
+              <span key={`${outerIdx}-${idx}`}>{item.icon}</span>
+            ))
+          )}
       </motion.div>
     </main>
   );
