@@ -3,8 +3,8 @@ import styles from "./Technologies.module.css";
 
 const Technologies = () => {
   return (
-    <div className={styles.technologies}>
-      <h2 className={styles.heading}>Core Technologies</h2>
+    <>
+      <h2 className={styles.heading}>CORE TECHNOLOGIES</h2>
       <div className={styles["grid-container"]}>
         {techIcons.map((item, index) => (
           <div
@@ -17,7 +17,7 @@ const Technologies = () => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
