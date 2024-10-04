@@ -1,4 +1,4 @@
-import { Layout, ProgressBar } from "../../components";
+import { Layout, ProgressBar, Technologies } from "../../components";
 import { resumeData } from "../../data";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
@@ -40,6 +40,7 @@ const Resume = () => {
         <section className={styles.summary}>
           <p>{summary}</p>
         </section>
+        <Technologies />
         {sections.map((section, index) => (
           <section key={index} className={styles.section}>
             <h2>{section.title}</h2>
