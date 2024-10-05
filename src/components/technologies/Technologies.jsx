@@ -21,7 +21,7 @@ const Technologies = () => {
         variants={techVariants}
         transition={techVariants.transition}
       >
-        <h2 className={styles.heading}>CORE TECHNOLOGIES</h2>
+        <h2 className={styles.techHeading}>CORE TECHNOLOGIES</h2>
         <div className={styles["grid-container"]}>
           {techIcons.map((item, index) => (
             <div
