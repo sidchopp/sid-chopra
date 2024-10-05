@@ -9,11 +9,9 @@ const NewHero = () => {
   };
 
   const one = <h1 className={styles.h1}>Hi, I am</h1>;
-  const two = <h2 className={styles.bigHeading}>Siddharth Chopra.</h2>;
+  const two = <h2 className={styles.name}>Siddharth Chopra.</h2>;
   const three = (
-    <h3 className={styles.bigHeading}>
-      I build things for the <span className={styles.highlight}>web</span>.
-    </h3>
+    <h3 className={styles.bigHeading}>I build things for the web.</h3>
   );
   const four = (
     <p className={styles.p}>
