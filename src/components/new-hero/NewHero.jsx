@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const NewHero = () => {
   const headingVariants = {
-    initial: { x: "-100vw" },
-    animate: { x: 0 },
+    initial: { x: "-100vw", opacity: 0 },
+    animate: { x: 0, opacity: 1 },
   };
 
   const one = <h1 className={styles.h1}>Hi, I am</h1>;
@@ -34,7 +34,7 @@ const NewHero = () => {
           initial="initial"
           animate="animate"
           variants={headingVariants}
-          transition={{ duration: `${i + 0.5}`, ease: "easeOut" }}
+          transition={{ duration: `${i + 1}`, ease: "easeOut" }}
         >
           {item}
         </motion.div>
