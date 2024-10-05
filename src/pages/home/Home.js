@@ -1,9 +1,16 @@
-import { Hero, MyProjects, Layout, InfiniteScroll } from "../../components";
+import {
+  Hero,
+  MyProjects,
+  Layout,
+  InfiniteScroll,
+  NewHero,
+} from "../../components";
 
 const Home = () => {
   return (
     <Layout>
-      <Hero />
+      {/* <Hero /> */}
+      <NewHero />
       <InfiniteScroll title="Core Technologies" />
       <MyProjects />
     </Layout>
