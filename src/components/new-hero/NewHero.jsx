@@ -8,24 +8,23 @@ const NewHero = () => {
     animate: { x: 0, opacity: 1 },
   };
 
-  const one = <h1 className={styles.h1}>Hi, I am</h1>;
-  const two = <h2 className={styles.name}>Siddharth Chopra.</h2>;
-  const three = (
-    <h3 className={styles.bigHeading}>I build things for the web.</h3>
+  const name = <h2 className={styles.name}>Siddharth Chopra.</h2>;
+  const bigHeading = (
+    <h3 className={styles.bigHeading}>I deliver web solutions.</h3>
   );
-  const four = (
+  const softwareDeveloper = (
     <p className={styles.p}>
-      I’m a Software Developer based in sunny Calgary, Canada. I love building
-      products with great user experience.
+      I’m a <b>Software Developer</b> based in sunny Calgary, Canada. I love
+      building products with great user experience.
     </p>
   );
-  const five = (
+  const resume = (
     <Link className={styles.btn} to="/resume">
       My Resume
     </Link>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [name, bigHeading, softwareDeveloper, resume];
   return (
     <div className={styles.heroSection}>
       {items.map((item, i) => (
