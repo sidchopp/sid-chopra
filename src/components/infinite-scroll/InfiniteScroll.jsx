@@ -5,8 +5,8 @@ import { techIcons } from "../technologies/techIcons.js";
 import styles from "./InfiniteScroll.module.css";
 
 const InfiniteScroll = ({ title }) => {
-  const FAST_DURATION = 15;
-  const SLOW_DURATION = 35;
+  const FAST_DURATION = 45;
+  const SLOW_DURATION = 75;
 
   const [duration, setDuration] = useState(FAST_DURATION);
   let [ref, { width }] = useMeasure();
@@ -58,7 +58,7 @@ const InfiniteScroll = ({ title }) => {
           setDuration(FAST_DURATION);
         }}
       >
-        {Array(3)
+        {Array(8)
           .fill(techIcons)
           .flatMap((icons, outerIdx) =>
             icons.map((item, idx) => (
